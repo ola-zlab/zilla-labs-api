@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zilla-labs-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "vars": {
+    "WEBSITE_ORIGIN": "https://zillalab.zillalabola.workers.dev",
+    "ALLOW_SIGNUP": "true"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "REPLACE_WITH_YOUR_EXISTING_D1_DATABASE_NAME",
+      "database_id": "REPLACE_WITH_YOUR_EXISTING_D1_DATABASE_ID"
+    }
+  ]
+}
